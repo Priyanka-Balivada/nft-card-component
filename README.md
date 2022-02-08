@@ -35,7 +35,7 @@ Mobile
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://github.com/Priyanka-Balivada/nft-card-component)
 - Live Site URL: (https://your-live-site-url.com)
 
 ## My process
