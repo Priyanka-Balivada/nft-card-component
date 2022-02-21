@@ -1,16 +1,22 @@
 body {
-  padding: 3.5rem 0rem 0rem 31rem;
   background-color: hsl(217, 54%, 11%);
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   color: hsl(0, 0%, 100%);
 }
 
-hr{
- color: hsl(215, 32%, 27%);
- margin: 14px 0;
- border: 6rem;
- opacity: 0.8;
+hr {
+  color: hsl(215, 32%, 27%);
+  margin: 14px 0;
+  border: 6rem;
+  opacity: 0.8;
+}
+
+.container {
+  min-height: 100vh; /* height of the browser viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-card {
@@ -21,8 +27,7 @@ hr{
 }
 
 /* image and hover effects */
-.mainImage
-{
+.mainImage {
   position: relative;
 }
 
@@ -43,13 +48,12 @@ hr{
 }
 
 /* card effects */
-.card-img-top,.imageHover
-{
+.card-img-top, .imageHover {
   border-radius: 0.5rem;
 }
 
 .icon {
-  color:  hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,8 +70,8 @@ hr{
   font-weight: bold;
   margin-bottom: 10px;
   font-family: 'Outfit', sans-serif;
+  transition: color 2s;
 }
-
 
 .card-text {
   color: hsl(215, 51%, 70%);
@@ -75,8 +79,7 @@ hr{
   font-family: 'Outfit', sans-serif;
 }
 
-.info
-{
+.info {
   margin-top: 0.7rem;
 }
 
@@ -90,17 +93,20 @@ hr{
 
 .info1 {
   color: hsl(178, 100%, 50%);
-    /* margin-right: 4.8rem; */
-    float: left;
+  /* margin-right: 4.8rem; */
+  float: left;
 }
 
-.info2
-{
+.info2 {
   float: right;
 }
 
 .info2, .info3 {
   color: hsl(215, 51%, 70%);
+}
+
+.info4{
+   transition: color 2s;
 }
 
 svg {
@@ -113,26 +119,16 @@ svg {
   border: 1.5px solid hsl(0, 0%, 100%);
   border-radius: 20px;
   display: inline;
-margin-right: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 /* hover effect */
-.card-title:hover,.info4:hover
-{
+.card-title:hover, .info4:hover {
   color: hsl(178, 100%, 50%);
 }
 
-@media screen and (max-width: 375px) {
-    body{
-      padding: 3rem 0 0 7rem;
-    }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+/* @media screen and (max-width: 375px) {
+  body {
+    padding: 3rem 0 0 7rem;
+  }
+} */
